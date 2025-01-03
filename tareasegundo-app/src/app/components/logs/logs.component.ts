@@ -16,4 +16,5 @@ export class LogsComponent {
   ngOnInit() {
     this.logs = this.logService.getLogs();
   }
+  
 }

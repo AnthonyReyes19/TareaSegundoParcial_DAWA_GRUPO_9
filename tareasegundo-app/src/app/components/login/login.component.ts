@@ -31,6 +31,7 @@ export class LoginComponent {
         timestamp: new Date(),
       });
       this.logService.addLog('Login Failed', `Attempted User: ${this.username}`);
+      
     }
   }
 }
