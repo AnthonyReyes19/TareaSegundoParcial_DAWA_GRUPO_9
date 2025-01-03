@@ -4,12 +4,14 @@
     <tr>
       <th>Event</th>
       <th>Details</th>
+      <th>Timestamp</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let log of logs">
       <td>{{ log.event }}</td>
       <td>{{ log.details }}</td>
+      <td>{{ log.timestamp | date: 'medium' }}</td>
     </tr>
   </tbody>
 </table>
