@@ -1,0 +1,143 @@
+{
+  "garantias": [
+    {
+      "cliente_id": 3,
+      "producto": "Laptop",
+      "numeroFactura": "30303030",
+      "fechaCompra": "2024-11-11T05:00:00.000Z",
+      "descripcion": "fallo interno",
+      "estado": "Pendiente",
+      "fechaRegistro": "2024-11-25T05:00:00.000Z",
+      "ultimaActualizacion": "2024-11-25T05:00:00.000Z",
+      "id": "3e48"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "2",
+      "nombre": "Luisa Rodriguez",
+      "email": "luisa13@gmail.com",
+      "telefono": "0986547458",
+      "direccion": "Calle esmeraldas",
+      "fechaRegistro": "2024-11-26",
+      "estado": "Inactivo"
+    },
+    {
+      "id": "3",
+      "nombre": "Tito Pérez",
+      "email": "carlos.perez90@gmail.com",
+      "telefono": "0987456321",
+      "direccion": "Av. Quito y Guayaquil",
+      "fechaRegistro": "2024-11-25",
+      "estado": "Activo"
+    },
+    {
+      "id": "4",
+      "nombre": "Ana Martínez",
+      "email": "ana.martinez@gmail.com",
+      "telefono": "0981122334",
+      "direccion": "Barrio Central, Manta",
+      "fechaRegistro": "2024-11-20",
+      "estado": "Inactivo"
+    },
+    {
+      "id": "5",
+      "nombre": "Pedro Gómez",
+      "email": "pedro.gomez@gmail.com",
+      "telefono": "0989988776",
+      "direccion": "Ciudadela Universitaria",
+      "fechaRegistro": "2024-11-22",
+      "estado": "Activo"
+    },
+    {
+      "id": "6",
+      "nombre": "María Fernández",
+      "email": "mariaf@gmail.com",
+      "telefono": "0985678901",
+      "direccion": "Calle Bolívar, Quito",
+      "fechaRegistro": "2024-11-24",
+      "estado": "Activo"
+    },
+    {
+      "id": "7",
+      "nombre": "Britany",
+      "email": "britanyduque1@gmail.com",
+      "telefono": 943809145,
+      "direccion": "calle 25 y la h",
+      "fechaRegistro": "2024-11-26T05:00:00.000Z",
+      "estado": "activo"
+    },
+    {
+      "id": "1",
+      "nombre": "Rafaela",
+      "email": "correo",
+      "telefono": 987654123,
+      "direccion": "calle g y j",
+      "fechaRegistro": "2024-11-26T05:00:00.000Z",
+      "estado": "activo"
+    },
+    {
+      "id": "1",
+      "nombre": "Alberto",
+      "email": "alberto@gmail.com",
+      "telefono": 365478914,
+      "direccion": "calle 39 y la k",
+      "fechaRegistro": "2024-11-21T05:00:00.000Z",
+      "estado": "inactivo"
+    }
+  ],
+  "soporte": [
+    {
+      "id": "1",
+      "cliente_id": "2",
+      "descripcion": "Descripcion",
+      "producto": "Producto 1",
+      "fecha_solicitud": "2024-11-24",
+      "estado": "Pendiente"
+    }
+  ],
+  "devoluciones": [
+    {
+      "id": "1",
+      "cliente": "Juan Pérez",
+      "producto": "Laptop",
+      "cantidad": "1",
+      "descripcion": "La laptop tiene un defecto en la pantalla.",
+      "fechaSolicitud": "2024-11-10",
+      "estado": "Pendiente",
+      "prioridad": true
+    },
+    {
+      "id": "2",
+      "cliente": "María García",
+      "producto": "Teléfono",
+      "cantidad": "1",
+      "descripcion": "El teléfono no enciende.",
+      "fechaSolicitud": "2024-11-12",
+      "estado": "En Revision",
+      "prioridad": false
+    },
+    {
+      "id": "3",
+      "cliente": "Carlos Manrique",
+      "producto": "Teléfono",
+      "cantidad": "1",
+      "descripcion": "El teléfono se queda reiniciando.",
+      "fechaSolicitud": "2024-11-12",
+      "estado": "Devolucion Resuelto",
+      "prioridad": true
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Monitor 20pulgadas",
+      "categoria": "Accesorios",
+      "isAvailable": true,
+      "cantidadStock": "30",
+      "precio": "1500",
+      "fechaAgregado": "2024-11-26T05:00:00.000Z",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_958641-MEC76277875087_052024-O.webp",
+      "id": "4fa8"
+    }
+  ]
+}
