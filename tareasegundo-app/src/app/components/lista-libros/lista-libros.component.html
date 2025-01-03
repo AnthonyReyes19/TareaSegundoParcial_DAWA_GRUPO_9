@@ -1,0 +1,34 @@
+<br/><br/>
+
+@if(libros.length === 0) {
+  <p>No hay productos para mostrar.</p>
+}@else {
+  <div class="centrar">
+    @for(libro of libros; track $index) {
+      <mat-card appearance="outlined" class="producto-card">
+        <mat-card-header>
+          <mat-card-title><strong>{{ libro.title | uppercase }}</strong></mat-card-title>
+          <mat-card-subtitle>
+            <p>{{ libro.author }}</p>
+          </mat-card-subtitle>
+        </mat-card-header>
+
+        @if(libro.coverImage) {
+          <img mat-card-image [src]="libro.coverImage" [alt]="libro.title" 
+               #imgProducto (mouseenter)="activar(imgProducto)" (mouseleave)="desactivar(imgProducto)">
+        }@else {
+          <img mat-card-image src="./images/default.png" [alt]="libro.title" />
+        }
+
+        <br/>
+
+        <mat-card-content>
+          <p><strong>Disponible: </strong>{{ libro.isAvailable ? 'Sí' : 'No' }}</p>
+          <p><strong>Precio: </strong>{{ libro.budget | currency: 'USD' }}</p>
+        </mat-card-content>
+      </mat-card>
+    }
+  </div>
+}
+<br/><br/>
+<app-footer></app-footer>

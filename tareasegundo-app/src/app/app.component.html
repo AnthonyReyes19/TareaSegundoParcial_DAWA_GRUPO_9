@@ -1,26 +1,18 @@
 <div class="encabezado">
-  <h1>{{title}}</h1>
+  <h1>{{ title }}</h1>
   <nav>
     <ul class="menu-horizontal">
-      <li><a routerLink="/inicio" routerLinkActive="active">Inicio</a></li>
-      <li><a routerLink="/producto" routerLinkActive="active">Productos</a>
+      <li>
+        <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
+      </li>
+      <li>
+        <a routerLink="/producto" routerLinkActive="active">Productos</a>
         <ul class="menu-vertical">
           <li>
             <a routerLink="/crud-producto" routerLinkActive="active">Crud de Productos</a>
           </li>
         </ul>
       </li>
-      <li><a routerLink="/crud-clientes"  routerLinkActive="active">Clientes</a></li>
-      <li><a routerLink="/crud-solicitud" routerLinkActive="active">Solicitudes de Soporte</a></li>
-      <li>
-        <a routerLink="/crud-garantias"  routerLinkActive="active">Garantías</a>
-        <!-- <ul class="menu-vertical">
-          <li>
-            <a routerLink="/crud-garantias" routerLinkActive="active" >CRUD Garantías</a>
-          </li>
-        </ul> -->
-      </li>
-      <li><a routerLink="/crud-devoluciones" routerLinkActive="active">Devoluciones</a></li>
     </ul>
   </nav>
 </div>
