@@ -5,6 +5,19 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class LogService {
+  private isLoggedIn = false; // Cambia esta variable según tu lógica de autenticación
+
+  login() {
+    this.isLoggedIn = true; // Llama esto al autenticar correctamente
+  }
+
+  logout() {
+    this.isLoggedIn = false; // Llama esto al cerrar sesión
+  }
+
+  isAuthenticated(): boolean {
+    return this.isLoggedIn; // Devuelve true o false según el estado del usuario
+  }
   private storageKey = 'appLogs';
   private logsSubject = new BehaviorSubject<{ event: string; details: string; timestamp: Date }[]>([]);
   logs$ = this.logsSubject.asObservable();

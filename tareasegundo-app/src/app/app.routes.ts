@@ -3,13 +3,15 @@ import { ListaLibrosComponent } from './components/lista-libros/lista-libros.com
 import { CrudLibrosComponent } from './components/crud-libros/crud-libros.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogsComponent } from './components/logs/logs.component';
+import { IndexComponent } from './components/index/index.component';
+import { AuthGuard } from './guards/auth.guard';  // Asegúrate de importar el guard
 
 export const routes: Routes = [
-    { path: 'lista-libros', component: ListaLibrosComponent },
-    { path: 'login', component: LoginComponent},
-    { path: 'logs', component: LogsComponent },
-    { path: 'crud-libros', component: CrudLibrosComponent },
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
-    { path: '**', redirectTo: 'login' }
-  ];
-  
+    { path: 'login', component: LoginComponent },
+    { path: 'logs', component: LogsComponent, canActivate: [AuthGuard] },
+    { path: 'inicio', component: IndexComponent, canActivate: [AuthGuard] },
+
+    // rutas por defecto
+    { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+    { path: '**', redirectTo: '/inicio' }, //**  Representa cualquier otra ruta
+];
