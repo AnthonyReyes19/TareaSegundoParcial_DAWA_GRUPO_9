@@ -39,7 +39,8 @@ export class LoginComponent {
         username: this.username,
         timestamp: new Date(),
       });
-      this.logService.addLog('Login Failed', `Attempted User: ${this.username}`);
+      this.logService.addLog('Login Failed', `Attempted User: ${this.username} Usuario no
+        registrado en la base de datos.`);
     }
   }
 }
