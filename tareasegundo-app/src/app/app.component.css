@@ -9,6 +9,7 @@
 }
 .encabezado{
     background-color: rgb(119, 119, 119); 
+    padding-bottom: 20px;
 }
 
 nav{
@@ -41,13 +42,4 @@ nav{
 }
 .menu-horizontal li:hover .menu-vertical{
     display: block;
-}
-.menu-vertical li:hover{
-    background-color: black;
-}
-.menu-vertical li a{
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;
 }

@@ -1,5 +1,5 @@
 
-.login-container {
+/* .login-container {
     width: 300px;
     margin: 100px auto;
   }
@@ -7,4 +7,33 @@
   .error {
     color: red;
     margin-top: 10px;
-  }
+  } */
+
+
+  /* Imagen de fondo */
+.login-background {
+  background-image: url('/images/Biblioteca.jpg'); /* Cambia la ruta según la ubicación de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ocupar toda la altura de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}                                                               
+
+/* Estilo del formulario */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+/* Mensaje de error */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
