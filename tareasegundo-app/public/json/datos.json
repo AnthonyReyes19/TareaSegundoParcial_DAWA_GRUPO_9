@@ -1,11 +1,1 @@
-{
-  "libros": [
-    { "id": 1, 
-      "title": "El Principito", 
-      "author": "Antoine de Saint-Exupéry", 
-      "budget": 10.99, 
-      "coverImage": "./assets/images/default.png", 
-      "publicationDate": "1943-04-06", 
-      "isAvailable": true }
-  ]  
-}
+{}
