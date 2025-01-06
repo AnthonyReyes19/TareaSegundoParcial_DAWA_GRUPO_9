@@ -29,12 +29,12 @@ export class LoginComponent {
   onSubmit() {
     // Verificación de credenciales
     if (this.username === 'admin' && this.password === 'password123') {
-      alert('Login successful');
+      alert('Login successful'); 
       this.logService.addLog('Login Successful', `User: ${this.username}`);
       this.authGuard.setAuthenticated(true); // Actualiza el estado de autenticación
       this.router.navigate(['/inicio']);
       } else {
-      this.errorMessage = 'Invalid username or password';
+     this.errorMessage = 'Invalid username or password';
       this.loggingService.logEvent('Failed login attempt', {
         username: this.username,
         timestamp: new Date(),
